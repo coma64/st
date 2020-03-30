@@ -184,7 +184,7 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, clippaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
@@ -199,16 +199,16 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+	{ MODKEY,              XK_plus,        zoom,           {.f = +1} },
+	{ MODKEY,              XK_minus,       zoom,           {.f = -1} },
+	{ MODKEY,              XK_0,           zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,       {.i =  0} },
-	{ TERMMOD,              XK_Y,           clippaste,       {.i =  0} },
-	{ ShiftMask,            XK_Insert,      clippaste,       {.i =  0} },
+	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+	{ TERMMOD,              XK_Y,           clippaste,      {.i =  0} },
+	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ TERMMOD,              XK_L,           copyurl,        {.i =  0} },
-    { TERMMOD,              XK_O,           opencopied,     {.v = "xdg-open"} },
+	{ MODKEY,              XK_l,           copyurl,        {.i =  0} },
+    { MODKEY,              XK_o,           opencopied,     {.v = "xdg-open"} },
 };
 
 /*
