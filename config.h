@@ -207,8 +207,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           clippaste,      {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,              XK_l,           copyurl,        {.i =  0} },
-    { MODKEY,              XK_o,           opencopied,     {.v = "xdg-open"} },
+	{ TERMMOD,              XK_L,           copyurl,        {.i =  0} },
+    { TERMMOD,              XK_O,           opencopied,     {.v = "xdg-open"} },
 };
 
 /*
